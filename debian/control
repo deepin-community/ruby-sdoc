@@ -1,0 +1,27 @@
+Source: ruby-sdoc
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Lucas Kanashiro <kanashiro@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-sdoc.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-sdoc
+Homepage: https://github.com/voloko/sdoc
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-ruby
+
+Package: ruby-sdoc
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-json,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: RDoc generator to build searchable HTML documentation for Ruby code
+ This package provides extra generators and templates for the RDoc
+ documentation tool for Ruby. Generated HTML documentation has a javascript
+ search index, so the documentation is searchable without any server-side
+ requirements other than a web server.

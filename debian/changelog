@@ -1,0 +1,69 @@
+ruby-sdoc (1.1.0-1) unstable; urgency=medium
+
+  * New upstream version 1.1.0
+  * Bump debhelper compatibility level to 13
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Mon, 01 Jun 2020 23:18:38 -0300
+
+ruby-sdoc (1.0.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Antonio Terceiro ]
+  * Remove myself from Uploaders:
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Lucas Kanashiro ]
+  * New upstream version 1.0.0 (Closes: #952082)
+  * Refresh patch
+  * Add myself to Uploaders list
+  * Bump debhelper compatibility level to 12
+  * Update VCS urls to point to salsa
+  * d/control: use secure url in Homepage field
+  * Declare compliance with Debian Policy 4.5.0
+  * d/control: rules does not require root
+  * d/copyright: use secure urls in Format and Source fields
+  * Update upstream copyright
+  * d/watch: update to use gemwatch.debian.net
+  * d/copyright: remove unused paragragh, removed by upstream
+  * Enable autodep8 ruby tests
+
+ -- Lucas Kanashiro <lucas.kanashiro@canonical.com>  Wed, 26 Feb 2020 17:44:20 -0300
+
+ruby-sdoc (0.4.1-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Cédric Boutillier ]
+  * Bump debhelper compatibility level to 9
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Run wrap-and-sort on packaging files
+
+  [ Christian Hofstaedtler ]
+  * Remove myself from Uploaders
+  * Update Standards-Version to 3.9.8 (no changes)
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Sun, 17 Jul 2016 18:58:03 +0000
+
+ruby-sdoc (0.4.1-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Sun, 31 Aug 2014 11:33:39 +0200
+
+ruby-sdoc (0.4.0-1) unstable; urgency=medium
+
+  [ Christian Hofstaedtler ]
+  * Initial release (Closes: #694705)
+
+  [ Antonio Terceiro ]
+  * Ignore failure on require-rubygems dh_ruby test
+  * Fix running tests during build
+    - debian/patches/skip-bundler-in-tests.patch: do not load bundler during
+      the build
+  * add myself to Uploaders
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Thu, 16 Jan 2014 16:55:26 +0100
